@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Mr Little Design</title>
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* ====== GLOBAL STYLES ====== */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0f24, #1a1f3b);
+            color: white;
+        }
+
+        /* ====== FIXED NAVBAR ====== */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        nav img {
+            width: 50px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00eaff;
+        }
+
+        /* Add space so the navbar doesn’t cover content */
+        .content {
+            padding: 120px 20px 40px;
+            text-align: center;
+        }
+
+        /* ====== SERVICES SECTION ====== */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            background: rgba(0,0,0,0.3);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .service-card i {
+            font-size: 40px;
+            color: #00eaff;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ====== NAVBAR ====== -->
+    <nav>
+        <img src="web_logo.png" alt="Logo">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+            <li><a href="log in.html">log in</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="videos.html"><video src=""></video></a></li>
+        </ul>
+    </nav>
+
+    <!-- ====== PAGE CONTENT ====== -->
+    <div class="content">
+        <h1>Our Services</h1>
+        <p>We offer creative and professional digital solutions to help your brand stand out.</p>
+
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Website Design</h3>
+                <p>We build modern, responsive websites that look great on phones, tablets, and computers.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-brush"></i>
+                <h3>Graphic Design</h3>
+                <p>From logos to posters — we design visuals that match your brand identity and attract customers.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-camera"></i>
+                <h3>Photo Editing</h3>
+                <p>Enhancing your images with professional color correction, retouching, and creative effects.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>We help your business grow online through social media campaigns, ads, and SEO strategy.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
