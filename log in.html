@@ -1,120 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-
-  <style>
-    /* 🌈 Page background and text */
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0077b6, #90e0ef);
-      height: 100vh;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* 🧱 Login container box */
-    .login-box {
-      background-color: white;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      width: 300px;
-      text-align: center;
-    }
-
-    .login-box h2 {
-      margin-bottom: 20px;
-      color: #0077b6;
-    }
-
-    /* ✏️ Input fields */
-    input[type="text"], input[type="password"] {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-
-    /* 🚀 Buttons */
-    input[type="submit"] {
-      background-color: #0077b6;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      width: 100%;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #023e8a;
-    }
-
-    /* 🧭 Navigation bar */
-    nav {
-      position: absolute;
-      top: 15px;
-      left: 0;
-      width: 100%;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Mr Little Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <header>
+        <img src="Web_logo.png" alt="Mr Little Design Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+                <li><a href="log in.html">Log in</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- 🧭 Navigation -->
-  <nav>
-    <a href="home.html">Home</a>
-    <a href="contact us.html">Contact</a>
-    <a href="about us.html">Contact</a>
-    <a href="services.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="videos.html">Videos</a>
-    <a href="login.html">Login</a>
-  </nav>
+    <section style="padding:120px 20px; min-height:80vh;">
+        <h1>Log In</h1>
+        <form style="max-width:400px; margin:0 auto;">
+            <div class="form-group">
+                <label>Username or Email</label>
+                <input type="text" class="form-control" placeholder="Enter username or email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Enter password">
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+            <p><a href="#">Forgot password?</a></p>
+        </form>
+    </section>
 
-  <!-- 🔐 Login Form -->
-  <div class="login-box">
-    <h2>Login</h2>
-    <form onsubmit="return checkLogin()">
-      <input type="text" id="username" placeholder="Username"><br>
-      <input type="password" id="password" placeholder="Password"><br>
-      <input type="submit" value="Login">
-    </form>
-  </div>
-
-  <script>
-    function checkLogin() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-
-      if (user === "admin" && pass === "1234") {
-        window.location.href = "index.html"; // redirect to home page
-        return false;
-      } else {
-        alert("Incorrect username or password!");
-        return false;
-      }
-    }
-  </script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
