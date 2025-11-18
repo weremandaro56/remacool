@@ -3,124 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Mr Little Design</title>
-
-    <!-- Font Awesome for icons -->
+    <title>Mr Little Design - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <style>
-        /* ===== Global Styles ===== */
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0a0f24, #1a1f3b);
-            color: white;
-            text-align: center;
-        }
-
-        /* ===== Fixed Navbar ===== */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(8px);
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            z-index: 1000;
-        }
-
-        nav img {
-            width: 55px;
-            margin-right: 20px;
-            border-radius: 8px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #00eaff;
-        }
-
-        /* ===== Home Section ===== */
-        .home {
-            padding-top: 140px; /* space for navbar */
-        }
-
-        .home h1 {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-
-        .home p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: auto;
-            line-height: 1.6;
-        }
-
-        .home button {
-            background: #00eaff;
-            border: none;
-            padding: 12px 30px;
-            margin-top: 25px;
-            border-radius: 25px;
-            font-size: 1rem;
-            cursor: pointer;
-            color: #0a0f24;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .home button:hover {
-            background: #0080aa;
-            color: white;
-        }
+        body { margin:0; font-family:'Poppins',sans-serif; background:linear-gradient(135deg,#0a0f24,#1a1f3b); color:white; text-align:center; }
+        nav { position:fixed; top:0; left:0; width:100%; background:rgba(0,0,0,0.7); backdrop-filter:blur(8px); padding:10px 20px; z-index:1000; }
+        nav ul { list-style:none; padding:0; margin:0; display:flex; justify-content:center; gap:30px; }
+        nav ul li a { color:white; text-decoration:none; font-size:18px; }
+        nav ul li a:hover { color:#00d4ff; }
+        .logo { height:70px; margin-top:10px; }
+        .home { padding-top:120px; }
+        .slider img { width:100%; max-height:600px; object-fit:cover; }
     </style>
 </head>
-
 <body>
-    <!--fixed title-->
-    <header>MrLittle</header>
+    <header>
+        <img src="Web_logo.png" alt="Mr Little Design Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+                <li><a href="log in.html">Log in</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- ===== Navbar ===== -->
-    <nav>
-        <img src="desktop/web_logo.png" alt="Mr Little Design Logo">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="log in.html">log in</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-            <li><a href="video.html"><video src=""></video></a></li>
-
-        </ul>
-    </nav>
-
-    <!-- ===== Home Content ===== -->
     <section class="home">
         <h1>Welcome to Mr Little Design</h1>
-        <p>We are a creative digital design team specializing in web design, graphics, and professional photo editing. 
-           We make your ideas come to life with modern style and powerful visuals.</p>
-        <button onclick="location.href='services.html'">Explore Our Services</button>
+        <p>We are a creative digital design team specializing in web design, graphics, and professional photo editing.<br>We make your ideas come to life with modern style and powerful visuals.</p>
+
+        <div class="slider">
+            <img src="Images/slider1.jpg" alt="Slide 1">
+            <img src="Images/slider2.jpg" alt="Slide 2">
+            <img src="Images/slider3.jpg" alt="Slide 3">
+        </div>
     </section>
-    <footer>
-        &copy ; 2025 Mr Little. All rights reserved.</footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
